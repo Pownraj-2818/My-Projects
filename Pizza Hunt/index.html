@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZA HUNT HOME SCREEN</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/indes.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <style>
+        header {
+            background-image: url("./Images/img_1.jpg");
+            background-size: 100%;
+            height: 850px;
+            width: 100%;
+        }
+        .carousel-control{
+            border-radius: 50%;
+            padding: 10px 15px;
+            border : 2px solid black;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#img1").mouseenter(function(){
+                $("#img1").hide();
+
+            });
+            $("#img1").mouseleave(function(){
+                $("#img1").show();
+            });
+
+        });
+        $(document).ready(function(){
+            $("#img2").mouseenter(function(){
+                $("#img2").hide("slow");
+            });
+            $("#img2").mouseleave(function(){
+                $("#img2").show("slow");
+            });
+        });
+        $(document).ready(function(){
+            $("#img3").mouseenter(function(){
+                $("#img3").animate({padding: '50px'});
+            });
+            $("#img3").mouseleave(function(){
+                $("#img3").animate({padding:'-50px'});
+            })
+            
+        });
+        $(document).ready(function(){
+            $("#img4").mouseenter(function(){
+                $("#img4").animate({width: 'toggle'});
+            });
+            $("#img4").mouseleave(function(){
+                $("#img4").animate({width: 'toggle'});
+            });
+
+            
+        });
+        $(document).ready(function(){
+            $("#img5").mouseenter(function(){
+                $("#img5").animate({ left: '250px',
+                         opacity: '0.5',
+                        height: '450px',
+                        width: '450px'});
+            });
+            $("#img5").mouseleave(function(){
+                $("#img5").animate({ left: '500px',
+                            opacity: '1',
+                            width: '100%',
+                            height: '100%',
+                            
+                        });
+            });
+            
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expanded-lg d-flex justify-content-between">
+            <a class="navbar-brand fw-bold text-white mt-5 ms-5 fs-3  ">PIZZA <span class="text-success">HUNT</span></a>
+            <div class="menu  d-flex justify-content-end mt-5 mx-5">
+                <a href="cartpage.html" class="  btn btn-success rounded-pill text-dark ms-2"><i class="fa fa-shopping-cart"
+                        aria-hidden="true"></i></a>
+                <a href="addresspage.html" class="mx-2"> <img src="Images/Vector.png" width="50%" height="100%" alt=""></a>
+                <a href="" class=" btn text-dark btn-success fw-bold rounded-pill  px-3">Sign-in</a>
+                <a href="" class=" btn text-white btn-success fw-bold rounded-pill ms-2 px-3">Sign-up</a>
+            </div>
+        </nav>
+        <div class=" ms-3 input-group p-5" style="width: 500px;margin-top:200px;">
+            <span class="input-group-text bg-white border-0 p-3"><i class="fa fa-user text-success " aria-hidden="true">
+                </i></span>
+            <input type="text" placeholder="Enter You Location" class="form-control p-3">
+            <span class="input-group-text bg-white border-0 p-3"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+        </div>
+
+    </header>
+
+    <div class="row mx-4 my-5">
+        <div class="col-md-3 ">
+            <img src="Images/img_14.jpg" alt="veg" class="img-fluid">
+            <h1 class="my-3 text-center">Veg</h1>
+        </div>
+        <div class="col-md-3">
+            <img src="Images/img_18.jpg" alt="veg" class="img-fluid">
+            <h1 class="my-3 text-center">Non-Veg</h1>
+        </div>
+        <div class="col-md-3">
+            <img src="Images/img_17.jpg" alt="veg" class="img-fluid">
+            <h1 class="my-3 text-center">Cheese</h1>
+        </div>
+        <div class="col-md-3">
+            <img src="Images/img_3.jpg" alt="veg" class="img-fluid">
+            <h1 class="my-3 text-center">Chef-Special</h1>
+        </div>
+    </div>
+
+    <div class="row mt-4 mx-1 ">
+        <div class="col-md-4">
+            <img src="Images/img_7.jpg" id="img1" alt="split_1" class="img-fluid">
+        </div>
+        <div class="col-md-4 ">
+            <img src="Images/img_6.jpg" id="img2" alt="split_2" class="img-fluid">
+        </div>
+        <div class="col-md-4 ">
+            <img src="Images/img_7.jpg" id="img3" alt="split_3" class="img-fluid">
+        </div>
+    </div>
+    <div class="container mt-5 ">
+        <div class="row mx-1 ">
+            <div class="col-md-6">
+                <img src="Images/img_9.jpg" id="img4" alt="split_1" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <img src="Images/img_10.jpg" id="img5" alt="split_2" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5 mx-2">
+        <div class="col-md-3">
+            <div class="card ">
+                <img src="Images/img_16.jpg" class="card-img-top  img-fluid g-0" alt="">
+            </div>
+            <div class="card-body bg-light">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 class="fs-4">Double Panner Supreme</h4>
+                        <p class="text-muted fs-6 text-wrap">
+                            Spiced Panner, Herbed Onion & Green Capsicum,Red Paprika
+                        </p>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="fs-4">Price</h4>
+                        <h4 class="fs-4 text-success">Rs.566</h4>
+                    </div>
+                </div>
+                <div class="row ">
+                    <h4>Select Your Size & crust</h4><br>
+                    <select class="w-50 ms-4" style="padding:5px;border:0;border-radius: 5%">
+                        <option>Medium Pan</option>
+                        <option>Small Pan</option>
+                        <option>Larger Pan</option>
+                    </select>
+                </div>
+                <div class="mx-4">
+                    <a href="Product Details page.html" class="btn mt-5 w-100 bg-success text-dark fw-bold">Order Now</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card ">
+                <img src="Images/img_12.jpg" class="card-img-top  img-fluid g-0" alt="">
+            </div>
+            <div class="card-body bg-light">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 class="fs-4">Double Panner Supreme</h4>
+                        <p class="text-muted fs-6 text-wrap">
+                            Spiced Panner, Herbed Onion & Green Capsicum,Red Paprika
+                        </p>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="fs-4">Price</h4>
+                        <h4 class="fs-4 text-success">Rs.566</h4>
+                    </div>
+                </div>
+                <div class="row ">
+                    <h4>Select Your Size & crust</h4><br>
+                    <select class="w-50 ms-4" style="padding:5px;border:0;border-radius: 5%">
+                        <option>Medium Pan</option>
+                        <option>Small Pan</option>
+                        <option>Larger Pan</option>
+                    </select>
+                </div>
+                <div class="mx-4">
+                    <a href="Product Details page.html" class="btn mt-5 w-100 bg-success text-dark fw-bold">Order Now</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card ">
+                <img src="Images/img_13.jpg" class="card-img-top  img-fluid g-0" alt="">
+            </div>
+            <div class="card-body bg-light">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 class="fs-4">Double Panner Supreme</h4>
+                        <p class="text-muted fs-6 text-wrap">
+                            Spiced Panner, Herbed Onion & Green Capsicum,Red Paprika
+                        </p>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="fs-4">Price</h4>
+                        <h4 class="fs-4 text-success">Rs.566</h4>
+                    </div>
+                </div>
+                <div class="row ">
+                    <h4>Select Your Size & crust</h4><br>
+                    <select class="w-50 ms-4" style="padding:5px;border:0;border-radius: 5%">
+                        <option>Medium Pan</option>
+                        <option>Small Pan</option>
+                        <option>Larger Pan</option>
+                    </select>
+                </div>
+                <div class="mx-4">
+                    <a href="Product Details page.html" class="btn mt-5 w-100 bg-success text-dark fw-bold">Order Now</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card ">
+                <img src="Images/img_2.jpg" class="card-img-top  img-fluid g-0" alt="">
+            </div>
+            <div class="card-body bg-light">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4 class="fs-4">Double Panner Supreme</h4>
+                        <p class="text-muted fs-6 text-wrap">
+                            Spiced Panner, Herbed Onion & Green Capsicum,Red Paprika
+                        </p>
+                    </div>
+                    <div class="col-md-1">
+
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="fs-4">Price</h4>
+                        <h4 class="fs-4 text-success">Rs.566</h4>
+                    </div>
+                </div>
+                <div class="row ">
+                    <h4>Select Your Size & crust</h4><br>
+                    <select class="w-50 ms-4" style="padding:5px;border:0;border-radius: 5%">
+                        <option>Medium Pan</option>
+                        <option>Small Pan</option>
+                        <option>Larger Pan</option>
+                    </select>
+                </div>
+                <div class="mx-4">
+                    <a href="Product Details page.html" class="btn mt-5 w-100 bg-success text-dark fw-bold">Order Now</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="mycarousel" class="carousel slide mt-3" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/img_19.jpg" alt="First_slide" class="d-block w-100">
+            </div>
+            <div class="carousel-item ">
+                <img src="Images/img_6.jpg" alt="second_slide" class="d-block w-100">
+            </div>
+            <div class="carousel-item ">
+                <img src="Images/img_8.jpg" alt="Third_slide" class="d-block w-100">
+            </div>
+            <div class="carousel-item ">
+                <img src="Images/img_9.jpg" alt="Fourth_slide" class="d-block w-100">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#mycarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control   fs-5" aria-hidden="true"><i class="fa fa-arrow-left text-success" aria-hidden="true"></i></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#mycarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control  fs-5" aria-hidden="true"><i class="fa fa-arrow-right text-success" aria-hidden="true"></i></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+    <div style="background-color: #313131;" class="text-center  p-2">
+        <h4> <a href="" class="fw-bold text-success text-decoration-none ">Back To Top <span><i class="fa fa-chevron-up ms-2 text-white" aria-hidden="true"></i></span> </a></h4>
+        
+    </div>
+    <footer class="bg-dark py-4">
+      
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="text-white ms-5">PIZZA <span class="text-success">HUNT</span></h2>
+                       
+                </div>
+                <div class="col-md-3">
+                    <ol class="list-unstyled text-white fs-4">
+                        <li>About Uber Eats</li>
+                        <li>Read Our Blog</li>
+                        <li>Buy gift cards</li>
+                        <li>Create Buisness account</li>
+                        <li>Add Your Restaurant</li>
+                        <li>Signup to deliver</li>
+                    </ol>
+                </div>
+                <div class="col-md-3">
+                    <ol class="list-unstyled text-white fs-4">
+                        <li>Get Help</li>
+                        <li>Read FAQs</li>
+                        <li>View all cities</li>
+                        <li>View all countries</li>
+                        <li>Restaurant near me</li>
+                        <li>Save on your first order</li>
+                    </ol>
+                </div>
+            </div>
+        
+    </footer>
+
+
+
+
+</body>
+
+</html>
