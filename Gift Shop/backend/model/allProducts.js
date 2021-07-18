@@ -1,0 +1,50 @@
+const mongoose = require('mongoose')
+
+const productShema= new mongoose.Schema({
+    imgURL:{
+        required:true,
+        type:String
+    },
+    code:{
+        type:String,
+        required:true
+    },
+    productName:{
+        type:String,
+        required:true
+    },
+    desc:{
+        type:String,
+        required:true
+    },
+    key1:{
+        type:String,
+        required:true
+    },
+    key2:{
+        type:String,
+        required:true
+    },
+    offer:{
+        type:Number,
+        required:true
+    },
+    price:{
+        type:Number,
+        required:true
+    },
+    stars:{
+        type:Number,
+        required:true
+    },
+    ratings:{
+        type:Number,
+        required:true
+    },
+    by:{
+        type:String,
+        required:true
+    }
+})
+
+module.exports=mongoose.model('allProducts',productShema)
